@@ -1,0 +1,29 @@
+#include<stdio.h>//包含一个叫stdio.h的文件//std-标准 io输入输出
+int main()//主函数-main前面的int表示main函数调用返回一个整型值
+{//这里完成任务
+	//printf("hello world\n");//在屏幕上输出hello world//print function
+	//char ch = 'A';
+	//printf("%c\n",ch);//%c打印字符格式的数据
+	//int age = 20;
+	//printf("%d\n", age);//%d打印整型十进制数据//short int 短整型long 长整型
+	//%f-打印浮点型 %p-以地址的形式进行打印 %x-打印十六进制数字
+	//float f = 5;
+	//printf("%f\n", f);
+	//printf("%d\n", sizeof(char));
+	//printf("%d\n", sizeof(short));
+	//printf("%d\n", sizeof(long));
+	//printf("%d\n", sizeof(int));
+	//printf("%d\n", sizeof(long long));
+	//printf("%d\n", sizeof(float));
+	//printf("%d\n", sizeof(double));
+	//short age = 20;//向内存申请两个字节用来存放20
+	int sum = 0;
+	int sum1 = 0;
+	int sum2 = 0;
+	scanf("%d%d", &sum1, &sum2);
+	 sum = sum1 + sum2;
+	printf("sum=%d\n", sum);
+		return 0;//返回0
+}
+//void main已经过时//size of（long)>=size of(int)//局部变量和全局变量同时存在，局部变量优先。
+//作用域与生命周期
