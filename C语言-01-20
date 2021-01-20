@@ -1,0 +1,137 @@
+#define _CRT_SECRET_NO_WARNINGS
+#include<stdio.h>
+struct book//创建一个结构体类型
+{
+	char name[20];
+	short price;
+};
+int main()
+{
+	struct book b1 = { "C语言程序设计",30 };
+	struct book* pb = &b1;
+	strcpy(b1.name, "C++");
+	printf("%s\n", pb->name);
+	printf("%d\n", pb->price);//无法打印???
+	/*printf("书名:%s\n", (*pb).name);
+	printf("价格:%d\n", (*pb).price);*///用指针打印
+	/*b1.price = 15;
+	printf("书名:%s\n", b1.name);
+	printf("价格:%d\n", b1.price);*///直接打印
+	return 0;
+}
+//int main()
+//{
+//	double d = 3.14;
+//	double* bd = &d;
+//	printf("%d\n", sizeof(bd));//32个比特位存储，所以是4，64位机器上则是8
+//	return 0;
+//}
+//int main()
+//{
+//	char ch = 'w';
+//	char* pc = &ch;
+//	printf("%d\n", sizeof(pc));
+//	/**pc = 'a';
+//	printf("%c\n", ch);*/
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 0;
+//	int*p = &a;//P是专门用来存放地址的指针变量
+//	/*printf("%p\n", &a);
+//	printf("%p\n", p);*/
+//	*p=20;//解引用操作符
+//	printf("a=%d", a);
+//	return 0;
+//}
+//#include<string.h>
+//#define MAX 100
+//int x = 0;
+//int y = 0;
+//#define MAX(x,y) (x>y?x:y)//宏的定义
+//int main()
+//{
+//	int a = 20;
+//	int b = 10;
+//	int max = MAX(a, b);
+//	printf("%d", max);
+//}
+//extern int add(int, int);
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = add(a, b);
+//	printf("sum=%d", sum);
+//	return 0;
+//}
+//int main()
+//{
+//	extern int g_val;
+//	printf("%d", g_val);
+//	return 0;//static修饰，改变变量的作用域（变小）和生命周期（变长），也可以修饰函数
+//}
+//void test() 
+//{
+//	static int a = 1;//a是局部变量
+//	a++;
+//	printf("a=%d\n", a);
+//}
+//int main()
+//{
+//	int i = 0;
+//	while (i < 5)
+//	{
+//		test();
+//		i++;
+//	}
+//	return 0;
+//}
+	/*unsigned int num = -10;
+	printf("%u", num);
+	return 0;*/
+	/*register int a = 10;*///建议把a定义成一个寄存器变量，int定义的变量是有符号的
+	/*int arr[10] = { 0 };
+	int a = arr[4]*/;//下标引用操作符
+	/*int a = 0;
+	int b = 5;
+	int max = 0;
+	int max = (a>b ? a : b);
+	return 0;*/
+	//int c = a || b;//逻辑或
+	//int d = a && b;//逻辑与
+	//printf("d=%d\n", d);
+	//printf("c=%d\n", c);
+	//return 0;
+	/*int a = 5 % 2;
+	printf("原数字%d\n", a);
+	int b = a << 2;
+	printf("逻辑左移两位%d\n", b);
+	return 0;*/
+	//int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	///*printf("%d\n",arr[4]);*///用下标访问元素
+	//int i = 0;
+	//while ( i < 10) {
+	//	printf("%d\\", arr[i]);
+	//	i++;
+	//}
+	//return 0;
+	/*printf("开始敲代码\n");
+	int line =0;
+	while (line <= 20000) 
+	{
+		line++;
+		printf("继续敲代码%d\n",line);
+	}
+	if (line > 20000)
+		printf("去找工作\n");
+	return 0;*/
+	//printf("%d\n", strlen("c:\test\32\test.c"));//--\32是两个八进制数字
+	//printf("%c\n", '\32');
+	//return 0;
+//int main()
+//{
+//	printf("双引号%s\n", "\"");
+//	return 0;
+//}
