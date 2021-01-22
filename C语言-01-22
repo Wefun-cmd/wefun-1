@@ -1,0 +1,175 @@
+#include<stdio.h>
+int main()
+{
+	int ch = getchar();
+	putchar(ch);
+	printf("%c\n", ch);
+	return 0;
+	/*int i = 0;
+	while (i <= 10)
+	{
+		i++;
+		if (i == 5)
+			continue;
+		printf("%d\n", i);
+	}
+	return 0;*/
+}
+//int main()
+//{
+//	int n = 1;
+//	int m = 2;
+//	switch (n)
+//	{
+//	case 1:
+//		m++;
+//	case 2:
+//		n++;
+//	case 3:
+//		switch (n)
+//		{//switch允许嵌套使用 case 1:
+//			n++;
+//		case 2:
+//			m++; n++;
+//			break;
+//		}
+//	case 4:
+//		m++;
+//		break;
+//	default:
+//		break;
+//	}
+//	printf("m = %d, n = %d\n", m, n); 
+//	return 0;
+//}
+//int main()
+//{
+//	int day = 4;
+//	scanf_s("%d", &day);
+//	switch (day)
+//	{
+//	case 1:		
+//	case 2:		
+//	case 3:		
+//	case 4:
+//	case 5:
+//		printf("今天是工作日");
+//		break;
+//	case 6:		
+//	case 7:
+//		printf("今天是休息日");
+//		break;
+//	default:
+//		printf("输入错误");
+//		break;
+//	/*case 1:
+//		printf("今天是星期一\n");
+//		break;
+//	case 2:
+//		printf("今天是星期二\n");
+//		break;
+//	case 3:
+//		printf("今天是星期三\n");
+//		break;
+//	case 4:
+//		printf("今天是星期四\n");
+//		break;
+//	case 5:
+//		printf("今天是星期五\n");
+//		break;
+//	case 6:
+//		printf("今天是星期六\n");
+//		break;
+//	case 7:
+//		printf("今天是星期日\n");*///switch是整型表达式，而case语句是整型常量表达式
+//		break;
+//	}
+//	return 0;
+//	/*if (1==day)
+//		printf("今天是星期一%d\n", day);
+//	else if (2 == day)
+//		printf("今天是星期二%d\n", day);
+//	else if (3 == day)
+//		printf("今天是星期三%d\n", day);
+//	else if (4 == day)
+//		printf("今天是星期四%d\n", day);
+//	else if (5 == day)
+//		printf("今天是星期五%d\n", day);
+//	else if (6 == day)
+//		printf("今天是星期六%d\n", day);
+//	else if (7 == day)
+//		printf("今天是星期日%d\n", day);
+//	return 0;*/
+//}
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 100)
+//	{
+//		printf("%d\n", i);
+//		i += 2;
+//		/*if (1 == i % 2)
+//			printf("%d\n", i);
+//		i++;*/
+//	}
+//	return 0;
+//}
+
+//int main()
+//{
+//	int num = 0;
+//	int a = 2;
+//	scanf("%d", &num);
+//	int b = num / a;
+//	if (1 == b)
+//	{
+//		printf("%d是奇数\n",num);
+//	}
+//	else
+//	{
+//		printf("num是偶数");
+//	}
+//	return 0;
+//
+//}
+//{
+//	int num = 4;
+//	if (5==num)
+//	{
+//		printf("hehe\n");
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 0; 
+//	int b = 2; 
+//	if (a == 1) 
+//	{
+//		if (b == 2)
+//			printf("hehe\n");
+//	}
+//		else{
+//			printf("haha\n"); //else和离得最近的if匹配--悬空else
+//          }
+//	return 0;
+//}
+
+//int main()
+//{
+//	int age =11;
+//	/*scanf("%d\n", &age);*/
+//	if (age < 18) {
+//		printf("未成年\n");
+//		printf("无法结婚\n");
+//	}
+//	else if (age >= 18 && age < 28)
+//		printf("青年\n");
+//	else if (age >= 28 && age < 58)
+//		printf("中年\n");
+//	else
+//		printf("老年\n");
+//	/*else
+//		printf("成年\n");*/
+//	return 0;
+//}
