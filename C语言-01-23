@@ -1,0 +1,150 @@
+#include<stdio.h>
+int main()
+{
+        int i = 0;
+        int n = 0;
+        int ret = 1;
+        int sum = 0;
+        for (n = 1; n <= 3; n ++ )
+        {
+            for (i = 1; i <= n; i++)
+            {
+                ret = ret * i;
+            }
+            sum = sum + ret;
+        }
+        printf("%d", sum);
+        return 0;
+    }
+//{
+//    int i = 0;
+//    int n = 0;
+//    int ret = 1;
+//    printf("请输入一个整数\:");
+//    scanf_s("%d", &n);
+//    for (i = 1; i <= n; i++)
+//    {
+//        ret = ret * i;
+//    }
+//    printf("%d", ret);
+//    return 0;
+//}
+//int jiecheng(int x)
+//{
+//    int t = 1;
+//    int m = 1;
+//    while (m <= x)
+//    {
+//        printf("%d", t);
+//        m++;
+//        t = t * (t + 1);
+//        return t;
+//    }
+//}
+//int main()
+//{
+//    int i = 1;
+//   
+//    for (i = 1; i <= 10; i++)
+//    {
+//         int max = 0;
+//        int max = max + jiecheng(i);
+//    }
+//    printf("%d", max);
+//    return 0;
+//}
+
+
+//{
+//    int i = 1;
+//    do
+//    {
+//        printf("%d\n", i);
+//        i++;
+//    } 
+//    while (i <= 10);
+//        return 0;
+//}
+//{
+//    int i = 0; int k = 0;
+//    for (i = 0, k = 0; k = 0; i++, k++)//判断语句，0次循环
+//        k++;
+//    return 0;
+//}
+//{
+//    int x, y;
+//    for (x = 0, y = 0; x < 2 && y < 5; ++x, y++)
+//    {
+//        printf("hehe\n");
+//    }
+//    return 0;
+//}
+//{
+//    for (;;)
+//        printf("hehe\n");//死循环
+//    return 0;
+//}
+//int main()
+//{
+//    int i = 0;
+//    while (i <= 10)
+//    {
+//        if (i == 5)
+//            continue;
+//        printf("%d\n", i);
+//        i++;
+//    }
+//    return 0;//无法结束循环
+
+    //int i = 0;
+    //for (i = 1; i <= 10; i++)
+    //{
+    //    if (5 == i)
+    //        /*  break;*/
+    //        continue;
+    //    printf("%d\n", i);
+    //}
+    //return 0;
+//int main()
+//{
+//    int i = 0;
+//    char password[20] = { 0 };
+//    printf("请输入密码:";
+//    scanf("%s", password);
+//    printf("请确认")；
+//
+//}
+//int main()
+//{
+//    int ch = 0;
+//    while ((ch = getchar()) != EOF)
+//    {
+//        putchar(ch);
+//    }
+//    return 0;
+//}
+  /*  int main()
+    {
+        long int n, m, t, max, min;
+        scanf_s("%ld %ld", &n, &m);
+        if (m > n)
+        {
+            max = m;
+            min = n;
+        }
+        else
+        {
+            max = n;
+            min = m;
+        }
+        while (min != 0)
+        {
+            t = max % min;
+            max = min;
+            min = t;
+           
+        }
+        min = (m * n) / max;
+        printf("%ld", min + max);
+        return 0;
+    }*/
