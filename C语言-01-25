@@ -1,0 +1,253 @@
+#define _CRT_SECURE_NO_WARNINGS
+#pragma warning(disable:4996)
+#include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include<stdlib.h>
+#include<math.h>
+int main()//乘法口诀表的打印
+{
+	int i = 0;
+	for (i = 0; i <= 9; i++)//打印9列
+	{
+		int j = 1;
+		for (j = 1; j <= i; j++)//每一行需要打印i个表达式
+		{
+			printf("%d*%d=%-2d ", i, j, i * j);//打印表达式的内容，%2d表示打印两位的数字，不足用空格补齐，-2d左对齐，2d右对齐。
+		}
+		printf("\n\n");//每一行的内容全部打印完后换行转到下一列
+	}
+	return 0;
+}
+//int main()
+//{
+//	int arr [9]= { 1,3,4,5,6,97,81,9,10 };
+//	int max = arr[0];//假设数组第一个值是最大值，且不引入新的数用来比较。
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	for (i = 0; i <= sz; i++)
+//	{
+//		if (max < arr[i])
+//		{
+//			max = arr[i];
+//		}
+//	}
+//	printf("最大值是%d\n", max);
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 1;
+//	float sum = 0.0;
+//	int flag = 1;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		sum = sum+1.0 / i;
+//		flag = -flag;
+//	}
+//	printf("%f\n", sum);
+//	return 0;
+//}
+//int main()
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 1; i <= 100; i++ )
+//	{
+//		if (i % 10 == 9)
+//		{
+//			count++;
+//		}
+//	     if (i / 10 == 9)
+//		{
+//			count++;
+//		}
+//	}
+//	printf("count=%d\n", count);
+//	return 0;
+//}
+//int main()
+//{
+//		int i = 0;//判断i是否为素数的方法，称为试除法
+//		int count = 0;
+//		for (i = 101; i <= 200; i+=2)//偶数不可能是素数
+//		{
+//			int j = 0;
+//			for (j = 2; j <=sqrt(i); j++)
+//			{
+//				if (i % j == 0)
+//				{
+//					break;
+//				}
+//			}
+//			if (j > i)
+//			{
+//				count++;
+//				printf("%d ", i);
+//			}
+//		}
+//		printf("\n%d", count);
+//		return 0;
+//	}
+
+	//return 0;
+//int main()
+//{
+//	int i = 0;//判断i是否为素数的方法，称为试除法
+//	int count = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		int j = 0;
+//		for (j = 2; j < i; j++)
+//		{
+//			if (i % j == 0)
+//			{
+//				break;
+//			}
+//		}
+//		if (j == i)
+//		{
+//			count++;
+//			printf("%d ", i);
+//		}
+//	}
+//	printf("\n%d", count);
+//	return 0;
+//}
+//int main()
+//{
+//	int year = 0;
+//	int count = 0;
+//	for (year = 1000; year <= 2000; year++) {
+//		if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}
+//	}
+//		/*if (year % 4 == 0 && year % 100 != 0)
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}
+//		else if(year%400==0)
+//		{
+//			printf("%d ", year);
+//			count++;
+//		}
+//	}*/
+//	printf("\n%d", count);
+//	return 0;
+//}
+/*
+{
+	int m, n,r;
+	scanf_s("%d %d", &m, &n);
+	if (m < n)
+	{
+		r = m;
+		m = n;
+		n = r;
+	}
+	while (m % n)
+	{
+		r = m % n;
+		m = n;
+		n = r;
+	}
+	printf("%d\n", n);
+	return 0;
+}*/
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 100; i++)
+//	{
+//		if (i % 3 == 0)
+//			printf("%d\n", i);
+//	}
+//	return 0;
+//}
+
+//{
+//	int a, b, c,tmp;
+//	scanf_s("%d%d%d", &a, &b, &c);
+//	if (a < b)
+//	{
+//		tmp = a;
+//		a = b;
+//		b = tmp;
+//	}
+//	if (a < c)
+//	{
+//		tmp = a;
+//		a = c;
+//		c = tmp;
+//	}
+//	if (b < c)
+//	{
+//		tmp = b;
+//		b = c;
+//		c = tmp;
+//	}
+//	printf("%d %d %d", a, b, c);
+//	return 0;
+//}
+//int main()
+//{
+//	char psw = "123456"; 
+//	int i = 0;
+//	int j = 0;
+//	for (i = 0; i < 3; ++i)
+//	{
+//		printf("please input:"); 
+//		scanf_s("%s", &psw);
+//		if (strcmp(psw, "password") == 0) 
+//			break;
+//	}
+//	if (i == 3)
+//		printf("exit\n");
+//	else
+//		printf("log in\n");
+//}
+
+//int main()
+//{
+//	int i = 0;
+//	char password[20] = { 0 };
+//	for (i = 0; i <= 3; i++) 
+//	{
+//		printf("请输入密码:");
+//		scanf("%s\n", password);
+//		if (strcmp(password, "341226")==0)//==不能用来比较两个字符串是否相等,用strcmp
+//		{
+//			printf("登录成功\n");
+//			break;
+//		}
+//		
+//	}
+//	if(i==3)
+//		printf("密码错误\n");
+//		
+//	return 0;
+//}
+//int main()
+//{
+//	char arr1[] = "welcome to anhui!!!!!!!";
+//	char arr2[] = "#######################";
+//	int left = 0;
+//	/*int right = sizeof(arr1) / sizeof(arr1[0]) - 2;*/
+//	int right = strlen(arr1) - 1;
+//	while (left <= right)
+//	{
+//		arr2[left] = arr1[left];
+//		arr2[right] = arr1[right];
+//		printf("%s\n", arr2);
+//		Sleep(50); 
+//		system("cls");
+//		left++;
+//		right--;
+//	}
+//	printf("%s\n", arr2);
+//	return 0;
+//}
