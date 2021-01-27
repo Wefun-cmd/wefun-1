@@ -1,0 +1,106 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<string.h>
+int main()
+{
+	char arr1[] = "bit";
+	char arr2[] = "#######";
+	strcpy(arr2, arr1);
+	printf("%s\n", arr2);
+	return 0;
+}
+//int add(int x, int y)
+//{
+//	int n = x + y;
+//	return n;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = add(a, b);
+//	printf("sum=%d\n", sum);
+//	return;
+//}
+//int main()
+//{
+//	char arr[20] = { 0 };
+//	system("shutdown -s -t 600");
+//again:
+//	printf("请注意，你的电脑将在60秒内关机，如果输入：你是猪，就取消关机\n请输入:");
+//	scanf_s("%s", &arr);
+//	if (strcmp(arr, "你是猪") == 0)
+//	{
+//		system("shutdown -a");
+//	}
+//	else
+//	{
+//		goto again;
+//	}
+//	return 0;
+//}
+/*
+{
+	again:
+	printf("hello world!\n");
+	goto again;
+	printf("nihao");
+	return 0;
+}*/
+//void menu()
+//{
+//	printf("***************************\n");
+//	printf("****  1.play  2.exit  *****\n");
+//	printf("***************************\n");
+//}
+//
+//void game()
+//{
+//	int ret = 0;
+//	int guess = 0;//接收猜的数字
+//	//time_t
+//	ret = rand()%100+1;
+//	//printf("%d\n", ret);
+//	while (1)
+//	{
+//		printf("请猜数字:");
+//		scanf_s("%d", &guess);
+//		if (guess > ret)
+//		{
+//			printf("猜大了\n。");
+//		}
+//		else if (guess < ret)
+//		{
+//			printf("猜小了。\n");
+//		}
+//		else
+//		{
+//			printf("猜对了。\n");
+//			break;
+//		}
+//	}
+////}
+//int main()
+//{
+//	int input=0;
+//	srand((unsigned int)time(NULL));//使用时间和srand随机数生成函数来生成随机数
+//	do
+//	{
+//		menu();
+//		printf("请选择:");
+//		scanf_s("%d", &input);
+//		switch (input)
+//		{
+//		case 1:
+//			game();
+//				break;
+//		case 2:
+//					break;
+//		default:
+//			printf("输入错误。\n");
+//			break;
+//		}
+//	} while (input);
+//	return 0;
+//}
