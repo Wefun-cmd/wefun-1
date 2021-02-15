@@ -1,0 +1,79 @@
+#include<stdio.h>
+int main()
+{
+    printf("     **     \n");
+    printf("     **     \n");
+    printf("************\n");
+    printf("************\n");
+    printf("    *  *    \n");
+    printf("    *  *    \n");
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int a = printf("Hello world!");
+    printf("\n");
+    printf("%d\n", a);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    long int sub = 0;
+    float c = 0.0;
+    float math = 0.0;
+    float english = 0.0;
+    scanf("%ld;%f,%f,%f", &sub, &c, &math, &english);
+    printf("The each subject score of  No. %ld is %.2f, %.2f, %.2f.", sub, c, math, english);
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+    char c;
+    while (scanf("%c", &c) != EOF) {
+        if ((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))
+            printf("YES\n");
+        else if (c == '\n')
+            continue;
+        else
+            printf("NO\n");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%d %d", a / b, a % b);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int a = 40;
+    int c = 212;
+    int b = (-8 + 22) * a - 10 + c / 2;
+    printf("%d\n", b);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    float r;
+    double v;
+    scanf("%f", &r);
+    v = 4 * 3.1415926 * r * r * r / 3;
+    printf("%.3lf", v);
+}
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a, b, c, p;
+    scanf("%f%f%f", &a, &b, &c);
+    p = (a + b + c) / 2;
+    printf("circumference=%.2f area=%.2f\n", a + b + c, sqrt(p * (p - a) * (p - b) * (p - c)));
+}
