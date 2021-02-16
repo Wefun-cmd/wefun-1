@@ -1,0 +1,148 @@
+////#include<stdio.h>
+////int main()
+////{
+////    int a, b;
+////    scanf("%d %d", &a, &b);
+////    float BMI = a / ((b / 100.0) * (b / 100.0));
+////    printf("%.2f", BMI);
+////    return 0;
+////}
+////#include<stdio.h>
+////int main()
+////{
+////    char ch;
+////    scanf("%c", &ch);
+////    printf("%d\n", ch);
+////    return 0;
+////}
+////#include<stdio.h>
+////int main()
+////{
+////    int a, b;
+////    scanf("a=%d,b=%d", &a, &b);
+////    printf("a=%d,b=%d", b, a);
+////    return 0;
+////}
+//#include<stdio.h>
+//int main()
+//{
+//    long second = 0;
+//    long d, m, s;
+//    scanf("%ld", &second);
+//    d = second / 3600;
+//    if (d > 24)
+//        d = d % 24;
+//    m = (second % 3600) / 60;
+//    s = second % 60;
+//    printf("%ld %ld %ld", d, m, s);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    float a, b, c;
+//    scanf("%f %f %f", &a, &b, &c);
+//    printf("%.2f %.2f", a + b + c, (a + b + c) / 3);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n, h, m;
+//    scanf("%d %d %d", &n, &h, &m);
+//    if (m % h == 0)
+//    {
+//        printf("%d", n - m / h);
+//    }
+//    else
+//        printf("%d", n - m / h - 1);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    printf("I lost my cellphone!");
+//    return 0;
+//}
+#include<stdio.h>
+int main()
+{
+    printf("Name    Age    Gender\n");
+    printf("---------------------\n");
+    printf("Jack    18     man");
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int a, s, d, f, g;
+    scanf("%d %d %d %d %d", &a, &s, &d, &f, &g);
+    printf("%.1f", (a + s + d + f + g) / 5.0);
+    return 0;
+}
+#include <stdio.h>
+int main()
+{
+    int a, b, sum;
+    scanf("0x%x 0%o", &a, &b);
+    sum = a + b;
+    printf("%d\n", sum);
+}
+#include<stdio.h>
+int main()
+{
+    float p = 0.0;
+    int a, b, c;
+    scanf("%f %d %d %d", &p, &a, &b, &c);
+    if (a == 11 && b == 11)
+    {
+        if (c == 1)
+        {
+            if (p * (0.7) > 50.0)
+                printf("%.2f\n", p * (0.7) - 50.0);
+            else
+                printf("0.00\n");
+        }
+        else
+            printf("%.2f\n", p * (0.7));
+    }
+    else if (a == 12 && b == 12)
+    {
+        if (c == 1)
+        {
+            if (p * (0.8) > 50.0)
+                printf("%.2f\n", p * (0.8) - 50);
+            else
+                printf("0.00\n");
+        }
+        else
+        {
+            printf("%.2f\n", p * (0.8));
+        }
+    }
+    else
+        printf("%.2f\n", p);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    int i, a, s, d, f, a1, s1, d1, f1, sum;
+    for (i = 10000; i < 100000; i++)
+    {
+        a = i / 10000;
+        a1 = i % 10000;
+        s = i / 1000;
+        s1 = i % 1000;
+        d = i / 100;
+        d1 = i % 100;
+        f = i / 10;
+        f1 = i % 10;
+        sum = a * a1 + s * s1 + d * d1 + f * f1;
+        if (sum == i)
+        {
+            printf("%d ", i);
+        }
+    }
+    return 0;
+}
