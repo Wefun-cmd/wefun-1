@@ -1,0 +1,294 @@
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//    int a, b;
+//    double bmi;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        bmi = a / pow(b / 100.0, 2);
+//        if (bmi < 18.5)
+//            printf("Underweight\n");
+//        else if (bmi >= 18.5 && bmi <= 23.9)
+//            printf("Normal\n");
+//        else if (bmi > 23.9 && bmi <= 27.9)
+//            printf("Overweight\n");
+//        else
+//            printf("Obese\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int m, n, k;
+//    while (scanf("%d%d%d", &m, &n, &k) != EOF)
+//    {
+//        if (m + n > k && m + k > n && n + k > m)
+//        {
+//            if (m == n && n == k && m == k)
+//                printf("Equilateral triangle!\n");
+//            else if (m == n || m == k || n == k)
+//                printf("Isosceles triangle!\n");
+//            else
+//                printf("Ordinary triangle!\n");
+//        }
+//        else
+//        {
+//            printf("Not a triangle!\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//int main()//复杂表达式用C语言代码表示不是一件容易的事，需要细心，并且时刻注意数据类型。
+//{
+//    double a, b, c;
+//    while (scanf("%ld %ld %ld", &a, &b, &c) != EOF)
+//    {
+//        if (a == 0)
+//            printf("Not quadratic equation\n");
+//        else
+//        {
+//            double d = b * b - 4 * a * c;
+//            if (d > 0)
+//                printf("x1=%.2lf;x2=%.2lf\n", ((sqrt(d) - b) / 2.0), (((sqrt(d) + b) / 2.0)));
+//            else if (d == 0)
+//                printf("x1=x2=%.2lf\n", (0 - b) / 2.0);
+//            else
+//                printf("x1=%.2lf;x2=%.2lf\n", ((0 - b) / 2 * a - sqrt(0 - d) / 2 * a)), ((0 - b) / 2 * a + sqrt(0 - d) / 2 * a));
+//
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<math.h>
+//int main()
+//{
+//    double a, b, c;
+//    while ((scanf("%lf %lf %lf", &a, &b, &c)) != EOF)
+//    {
+//        if (a == 0)
+//            printf("Not quadratic equation\n");
+//        else
+//        {
+//            double d = b * b - 4 * a * c;
+//            if (d > 0.0)
+//                printf("x1=%.2lf;x2=%.2lf\n", (-b - sqrt(d)) / (a * 2), (-b + sqrt(d)) / (a * 2));
+//            else if (d == 0.0)
+//                printf("x1=x2=%.2lf\n", (0 - b) / (2 * a));
+//            else
+//                printf("x1=%.2lf-%.2lfi;x2=%.2lf+%.2lfi\n", -b / (2 * a), sqrt(-d) / (2 * a), -b / (2 * a), sqrt(-d) / (2 * a));
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int a, b;
+//    while (scanf("%d %d", &a, &b) != EOF)
+//    {
+//        if (b == 4 || b == 6 || b == 9 || b == 11)
+//            printf("30\n");
+//        else if (b == 2)
+//        {
+//            if ((a % 4 == 0 && a % 100 != 0) || (a % 400 == 0))
+//                printf("29\n");
+//            else
+//                printf("28\n");
+//        }
+//        else
+//            printf("31\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    double a, b;
+//    char ch;
+//    while (scanf("%lf%c%lf", &a, &ch, &b) != EOF)
+//    {
+//        if (ch == '+')
+//            printf("%.4lf+%.4lf=%.4lf\n", a, b, a + b);
+//        else if (ch == '-')
+//            printf("%.4lf-%.4lf=%.4lf\n", a, b, a - b);
+//        else if (ch == '*')
+//            printf("%.4lf*%.4lf=%.4lf\n", a, b, a * b);
+//        else if (ch == '/')
+//        {
+//            if (b == 0.0)
+//                printf("Wrong!Division by zero!\n");
+//            else
+//                printf("%.4lf/%.4lf=%.4lf\n", a, b, a / b);
+//        }
+//        else
+//            printf("Invalid operation!\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int j;
+//        for (j = 0; j < n; j++)
+//        {
+//            int i;
+//            for (i = 0; i < n; i++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int i;
+//        for (i = 0; i < n; i++)
+//        {
+//            printf("*");
+//        }
+//        printf("\n");
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int j;
+//        for (j = 1; j <= n; j++)
+//        {
+//            int i;
+//            for (i = 1; i <= j; i++)
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int  main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int i, j;
+//        for (i = 0; i < n; i++)//打印列数
+//        {
+//            for (j = 0; j < n - i - 1; j++)//打印每行空格
+//                printf("  ");
+//            for (j = 0; j <= i; j++)//打印每行*
+//            {
+//                printf("* ");
+//            }
+//            printf("\n");
+//        }
+//    }
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int i, j;
+//        for (i = 1; i <= n; i++)
+//        {
+//            for (j = n - i; j >= 1; j--)
+//                printf(" ");
+//            for (j = 1; j <= i; j++)
+//                printf("* ");
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int i, j;
+//        for (i = n; i >= 1; i--)
+//        {
+//            for (j = n - i; j >= 1; j--)
+//                printf(" ");
+//            for (j = 1; j <= i; j++)
+//                printf("* ");
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n;
+//    while (scanf("%d", &n) != EOF)
+//    {
+//        int i, j;
+//        for (i = 1; i <= n + 1; i++)
+//        {
+//            for (j = n+1 - i; j >= 1; j--)
+//                printf(" ");
+//            for (j = 1; j <= i; j++)
+//                printf("* ");
+//            printf("\n");
+//        }
+//        for (i = n; i >= 1; i--)
+//        {
+//            for (j = n+1 - i; j >= 1; j--)
+//                printf(" ");
+//            for (j = 1; j <= i; j++)
+//                printf("* ");
+//            printf("\n");
+//        }
+//    }
+//    return 0;
+//}
+#include<stdio.h>
+int main()
+{
+    int n;
+    while (scanf("%d", &n) != EOF)
+    {
+        int j;
+        for (j = n+1; j >1; j--)
+        {
+            int i;
+            for (i = 1; i <= j; i++)
+            {
+                printf("* ");
+            }
+            printf("\n");
+        }
+        for (j = 1; j <= n+1; j++)
+        {
+            int i;
+            for (i = 1; i <= j; i++)
+            {
+                printf("* ");
+            }
+            printf("\n");
+        }
+    }
+    return 0;
+}
