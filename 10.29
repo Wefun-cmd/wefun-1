@@ -1,0 +1,237 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+//int main()
+//{
+//	char arr1[] = "abcdhsdf";
+//	memset(arr1+1, 'x', 3);//设置内存以字节为单位，且每个字节的内容都一样
+//	/*char arr2[20] = "xxxxxxxx";*/
+//	/*strcpy(arr2, arr1);*/
+//	printf("%s\n", arr1);
+//	return 0;
+//}
+
+//int is_prime(int n)
+//{
+//	int j = 0;
+//	for (j = 2; j <= sqrt(n); j++)
+//	{
+//		if (n % j == 0)
+//		{
+//			return 0;
+//		}
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	int i = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		if (is_prime(i) == 1)
+//		{
+//			printf("%d ",i);
+//		}
+//	}
+//	return 0;
+//}
+//int add(int x, int y);
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int sum = add(a, b);
+//	printf("%d\n", sum);
+//	return 0;
+//	/*printf("%d", printf("%d", printf("%d", 21)));
+//	return 0;*/
+//}
+//int add(int x, int y)
+//{
+//	return x + y;
+//}
+//void print(int n)
+//{
+//	if (n > 9)
+//	{
+//		print(n / 10);
+//	}
+//	printf("%d ", n % 10);
+//}
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	print(num);
+//	return 0;
+//}
+//输出100-200的素数
+//int is_prime(int x)
+//{
+//	static int flag;
+//	for (int i = 1; i <= sqrt(x); i++)
+//	{
+//		if (x % i == 0)
+//		{
+//			flag = 1;
+//			break;
+//		}
+//		else
+//			flag = 2;
+//	}
+//	return flag;
+//}
+//int main()
+//{
+//	for (int j = 100; j <= 200; j++)
+//	{
+//		if (is_prime(j) == 2)
+//			printf("%d ", j);
+//	}
+//	return 0;
+//}
+//输出1000-2000的闰年
+//int main()
+//{
+//	int i;
+//	for (i = 1000; i <= 2000; i++)
+//	{
+//		if ((i % 4 == 0) && (i % 400 != 0))
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
+//计算1/1-1/2+1/3-1/4+1/5 …… + 1/99 - 1/100 的值，打印出结果
+//int main()
+//{
+//	int flag = 1;
+//	static float sum;
+//	for(int i=1;i<=100;i++)
+//	{
+//		sum += flag * (1.0 / i);
+//		flag = -flag;
+//	}
+//	printf("%f", sum);
+//	return 0;
+//}
+//三个整数数按从大到小输出。
+//#include <stdio.h>
+//int main()
+//{
+//    int a = 2;
+//    int b = 3;
+//    int c = 1;
+//    scanf("%d%d%d",&a,&b,&c);
+//    if (a < b)
+//    {
+//        int tmp = a;
+//        a = b;
+//        b = tmp;
+//    }
+//    if (a < c)
+//    {
+//        int tmp = a;
+//        a = c;
+//        c = tmp;
+//    }
+//    if (b < c)
+//    {
+//        int tmp = b;
+//        b = c;
+//        c = tmp;
+//    }
+//    printf("a=%d b=%d c=%d\n", a, b, c);
+//    return 0;
+//}
+//给定两个数，求这两个数的最大公约数
+//int main()
+//{
+//	int a, b,c;
+//	scanf("%d%d", &a, &b);
+//		while (c=a % b )
+//		{
+//			a = b;
+//			b = c;
+//		}
+//		printf("%d", b);
+//		return 0;
+//}
+//在屏幕上输出9*9乘法口诀表
+//int main()
+//{
+//	for (int i = 1; i < 10; i++)
+//	{
+//		for (int j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%-2d ", i, j, i * j);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+//编写代码在一个整形有序数组中查找具体的某个数.要求：找到了就打印数字所在的下标，找不到则输出：找不到。
+//int main()
+//{
+//	int arr[] = { 1,2,4,7,9,23,56,90,123 };
+//
+//}
+//递归方式实现打印一个整数的每一位
+//int print(int x)
+//{
+//	if (x >= 10)
+//	{
+//		print(x / 10);
+//		printf("%d ", x % 10);
+//	}
+//	else
+//		printf("%d ", x);
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	print(a);
+//	return 0;
+//}
+//递归和非递归分别实现求n的阶乘（不考虑溢出的问题）
+//递归
+//int func(int x)
+//{
+//	static int b;
+//	while (x > 1)
+//	{
+//		b = x * func(x - 1);
+//		x -= 1;
+//	}
+//	return b;
+//}
+//int main()
+//{
+//	int a;
+//	scanf("%d", &a);
+//	printf("%d", func(a));
+//	return 0;
+//}
+//非递归
+//int main()
+//{
+//	static int a, i;
+//	static int sum = 1;
+//	while(scanf("%d", &a)!=EOF)
+//	{ 
+//		if (a == 1)
+//		{
+//			sum = 1;
+//		}
+//		else
+//		{
+//			for (i = 1; i < a; i++)
+//			{
+//				sum = sum * (i + 1);
+//			}
+//		}
+//		printf("%d\n", sum);
+//	}
+//	return 0;
+//}
