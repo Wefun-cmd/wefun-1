@@ -2,7 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include"SList.h"
 //È¥ÖØ(»­Í¼·ÖÎöÂß¼­)
 //int removeDuplicates(int* nums, int numsSize)
 //{
@@ -30,12 +30,7 @@
 //	++dst;
 //	return dst;
 //}
-typedef int SLTDataType;
-typedef struct SListNode
-{
-	int data;
-	struct SListNode* next;
-}SLTNode;
+
 void SListPrint(SLTNode* phead)
 {
 	SLTNode* cur = phead;
@@ -44,12 +39,11 @@ void SListPrint(SLTNode* phead)
 		printf("%d->",cur->data);
 		cur = cur->next;
 	}
+	printf("\n");
 }
 void SListPushBack(SLTNode** pphead,SLTDataType x)
 {
-	SLTNode* newnode = malloc(sizeof(SLTNode));
-	newnode->data = x;
-	newnode->next = NULL;
+	SLTNode* newnode = BuyListNode(x);
 	if (*pphead == NULL)
 	{
 		*pphead = newnode;
@@ -72,7 +66,45 @@ void TestSList1()
 	SListPushBack(&plist, 2);
 	SListPushBack(&plist, 3);
 	SListPushBack(&plist, 4);
+	/*SListPrint(plist);
+	SListPushFront(&plist, 1);
+	SListPushFront(&plist, 2);
+	SListPushFront(&plist, 3);
+	SListPushFront(&plist, 4);*/
+	SListPopBack(&plist);
 	SListPrint(plist);
+}
+SLTNode* BuyListNode(SLTDataType x)
+{
+	SLTNode* newnode = malloc(sizeof(SLTNode));
+	if (newnode == NULL)
+	{
+		printf("malloc fail\n");
+		exit(-1);
+	}
+	newnode->data = x;
+	newnode->next = NULL;
+	return newnode;
+}
+void SListPushFront(SLTNode** pphead, SLTDataType x)
+{
+	SLTNode* newNode = BuyListNode(x);
+	newNode->next = *pphead;
+	*pphead = newNode;
+}
+void SListPopBack(SLTNode** pphead)
+{
+	SLTNode* prev = NULL;
+	SLTNode* tail = *pphead;
+	//while(tail->next!=NULL)
+	while (tail->next)
+	{
+		prev = tail;
+		tail = tail->next;
+	}
+	free(tail);
+	tail = NULL;
+	prev->next = NULL;
 }
 int main()
 {
